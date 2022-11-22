@@ -11,14 +11,18 @@ on:
         - feature
         - bug
 
-  push:
-    branches:
-      - dev
-
 jobs:
   RELEASE:
     runs-on: ubuntu-latest
     steps:
+     - run: |
+        BRANCH="${GITHUB_REF#refs/heads/}"
+        if [ $BRANCH == 'main' ]
+        then
+          echo "Branch validation Successful "      
+        else
+          echo "Branch not configured!"
+          exit 1
      - uses: actions/checkout@main
        with:
           fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
