@@ -10,6 +10,7 @@ on:
         - major
         - feature
         - bug
+
   push:
     branches:
       - dev
@@ -18,9 +19,8 @@ jobs:
   RELEASE:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          git tag | sort -V | tail -1
-
+    - uses: actions/checkout@main
+    - run: git tag | sort -V | tail -1
   tagging:
     runs-on: ubuntu-latest
     steps:
