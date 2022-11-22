@@ -41,7 +41,7 @@ jobs:
         RELEASE: ${{ inputs.ReleaseType }}
       with:
         current-version: '0.0.1'
-        version-fragment: $RELEASE
+        version-fragment: major
     - name: Do something with your bumped release version
       run: echo ${{ steps.bump_version.outputs.next-version }}
       # will print 2.12.0
