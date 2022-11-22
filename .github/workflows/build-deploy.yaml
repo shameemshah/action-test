@@ -10,8 +10,6 @@ on:
         - major
         - feature
         - bug
-  release:
-    types: [ created ]
   push:
     branches:
       - dev
@@ -21,15 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "RELEASE: $RELEASE"
-          echo "Tags: $TAGS"
-          echo "Environment: $ENVIRONMENT"
-          BRANCH="${GITHUB_REF#refs/heads/}"
-          echo Branch=$BRANCH
-        env:
-          RELEASE: ${{ inputs.ReleaseType }}
-          TAGS: ${{ inputs.tags }}
-          ENVIRONMENT: ${{ inputs.environment }}
+          git tag | sort -V | tail -1
 
   tagging:
     runs-on: ubuntu-latest
