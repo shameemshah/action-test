@@ -10,38 +10,40 @@ on:
         - major
         - feature
         - bug
-  release:
-    types: [ created ]
-  push:
-    branches:
-      - dev
 
 jobs:
   RELEASE:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "RELEASE: $RELEASE"
-          echo "Tags: $TAGS"
-          echo "Environment: $ENVIRONMENT"
-          BRANCH="${GITHUB_REF#refs/heads/}"
-          echo Branch=$BRANCH
-        env:
-          RELEASE: ${{ inputs.ReleaseType }}
-          TAGS: ${{ inputs.tags }}
-          ENVIRONMENT: ${{ inputs.environment }}
+     - run: |
+        BRANCH="${GITHUB_REF#refs/heads/}"
+        if [ $BRANCH == 'main' ]
+        then
+          echo "Branch validation Successful "      
+        else
+          echo "Branch not configured!"
+          exit 1
+     - uses: actions/checkout@main
+       with:
+          fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
+     - name: 'Get Previous tag'
+       id: previoustag
+       uses: "WyriHaximus/github-action-get-previous-tag@v1"
+       with:
+        fallback: 0.0.1 # Optional fallback tag to use when no tag can be found
+     - name: Bump release version
+       id: bump_version
+       uses: christian-draeger/increment-semantic-version@1.0.3
+       with:
+        current-version: ${{ steps.previoustag.outputs.tag }}
+        version-fragment: ${{ inputs.ReleaseType }}
+     - name: Do something with your bumped release version
+       run: echo ${{ steps.bump_version.outputs.next-version }}
 
-  tagging:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Bump release version
-      id: bump_version
-      uses: christian-draeger/increment-semantic-version@1.0.3
-      env:
-        RELEASE: ${{ inputs.ReleaseType }}
-      with:
-        current-version: '0.0.1'
-        version-fragment: $RELEASE
-    - name: Do something with your bumped release version
-      run: echo ${{ steps.bump_version.outputs.next-version }}
-      # will print 2.12.0
+     - name: push new version tag
+       uses: actions/checkout@v3
+     - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git tag ${{ steps.bump_version.outputs.next-version }}
+          git push origin ${{ steps.bump_version.outputs.next-version }}
