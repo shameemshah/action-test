@@ -37,11 +37,9 @@ jobs:
     - name: Bump release version
       id: bump_version
       uses: christian-draeger/increment-semantic-version@1.0.3
-      env:
-        RELEASE: ${{ inputs.ReleaseType }}
       with:
         current-version: '0.0.1'
-        version-fragment: major
+        version-fragment: ${{ inputs.ReleaseType }}
     - name: Do something with your bumped release version
       run: echo ${{ steps.bump_version.outputs.next-version }}
       # will print 2.12.0
