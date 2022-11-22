@@ -27,16 +27,13 @@ jobs:
        uses: "WyriHaximus/github-action-get-previous-tag@v1"
        with:
         fallback: 0.0.1 # Optional fallback tag to use when no tag can be found
-  tagging:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Bump release version
-      id: bump_version
-      uses: christian-draeger/increment-semantic-version@1.0.3
-      with:
+     - name: Bump release version
+       id: bump_version
+       uses: christian-draeger/increment-semantic-version@1.0.3
+       with:
         current-version: ${{ steps.previoustag.outputs.tag }}
         version-fragment: ${{ inputs.ReleaseType }}
-    - name: Do something with your bumped release version
-      run: echo ${{ steps.bump_version.outputs.next-version }}
+     - name: Do something with your bumped release version
+       run: echo ${{ steps.bump_version.outputs.next-version }}
       # will print 2.12.0
   
