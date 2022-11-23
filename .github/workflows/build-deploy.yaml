@@ -18,7 +18,8 @@ jobs:
   RELEASE:
     runs-on: ubuntu-latest
     steps:
-     - run: |
+     - id: PreValidation 
+       run: |
         BRANCH="${GITHUB_REF#refs/heads/}"
         if [ $BRANCH == 'main' ]
         then
@@ -27,6 +28,15 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
+        ReleaseNotes=${{ inputs.ReleaseNote }}
+        IFS=','
+        read -ra arr <<< "$ReleaseNotes"
+        for val in "${arr[@]}";
+        do
+          ReleaseNotes=`printf " -  $val\n"`
+          echo $ReleaseNotes
+        done
+
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
