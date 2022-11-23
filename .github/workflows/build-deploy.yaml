@@ -85,6 +85,6 @@ jobs:
          tag_name: ${{ steps.bump_version.outputs.next-version }}
          release_name: Release V.${{ steps.bump_version.outputs.next-version }}
          body: |
-            ${{steps.github_release.outputs.changelog}}
+            ${{steps.build_changelog.outputs.changelog}}
          draft: false
          prerelease: false
