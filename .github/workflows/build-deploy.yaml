@@ -36,6 +36,7 @@ jobs:
           ReleaseNotes=$val
          echo "- ${ReleaseNotes^}"
          ReleaseNotes=`echo "- ${ReleaseNotes^}"`
+         echo "ReleaseNotes=$ReleaseNotes" >> $GITHUB_ENV
         done
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
@@ -77,6 +78,7 @@ jobs:
             # ${{ inputs.ReleaseType }} Release
             ## Changelog             
                ${{ inputs.ReleaseNote }}
+               "${{ env.action_state }}"
          draft: false
          prerelease: false
 
