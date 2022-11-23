@@ -10,6 +10,9 @@ on:
         - major
         - feature
         - bug
+      ReleaseNote:
+        description: 'Release Type'
+        required: true
 
 jobs:
   RELEASE:
