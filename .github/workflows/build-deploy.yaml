@@ -10,9 +10,9 @@ on:
         - Major
         - Feature
         - Bug
-      # ReleaseNote:
-      #   description: 'Release Note'
-      #   required: true
+      ReleaseNote:
+        description: 'Release Note'
+        required: true
 
 jobs:
   RELEASE:
