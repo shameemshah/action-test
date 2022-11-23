@@ -34,9 +34,8 @@ jobs:
         for val in "${arr[@]}";
         do
           ReleaseNotes=$val
-         echo "- ${ReleaseNotes^}"
-         ReleaseNotes=`echo "- ${ReleaseNotes^}"`
-         echo "ReleaseNotes=$ReleaseNotes" >> $GITHUB_ENV
+         echo "- ${ReleaseNotes^}" >> ReleaseNotes.txt
+         cat ReleaseNotes.txt
         done
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
