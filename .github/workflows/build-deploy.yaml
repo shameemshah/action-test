@@ -59,13 +59,12 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
        with:
          tag_name: ${{ steps.bump_version.outputs.next-version }}
-         release_name: Release ${{ github.ref }}
+         release_name: Release v.${{ steps.bump_version.outputs.next-version }}
          body: |
             Release Type ${{ inputs.ReleaseType }}
-            Changes in this Release
-            - First Change
-            - Second Change
-            - ${{ inputs.ReleaseNote }}
+            ## Changelog
+               
+               ${{ inputs.ReleaseNote }}
          draft: false
          prerelease: false
 
