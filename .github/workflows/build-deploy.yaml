@@ -78,7 +78,7 @@ jobs:
             # ${{ inputs.ReleaseType }} Release
             ## Changelog             
                ${{ inputs.ReleaseNote }}
-               "${{ env.action_state }}"
+               ${{ env.ReleaseNotes }}
          draft: false
          prerelease: false
 
