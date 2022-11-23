@@ -80,7 +80,7 @@ jobs:
     #      prerelease: false
 
      - name: "Create release"
-       uses: "actions/github-script@v5"
+       uses: "actions/github-script@v6"
        env: 
         RELEASE_TAG: ${{ steps.bump_version.outputs.next-version }}
        with:
