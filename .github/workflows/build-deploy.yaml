@@ -7,11 +7,11 @@ on:
         default: 'warning'
         type: choice
         options:
-        - major
-        - feature
-        - bug
+        - Major
+        - Feature
+        - Bug
       ReleaseNote:
-        description: 'Release Type'
+        description: 'Release Note'
         required: true
 
 jobs:
