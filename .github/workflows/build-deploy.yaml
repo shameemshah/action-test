@@ -35,8 +35,9 @@ jobs:
         do
           ReleaseNotes=$val
          echo "- ${ReleaseNotes^}" >> ReleaseNotes.txt
-         cat ReleaseNotes.txt
         done
+        ReleaseNotes=`cat ReleaseNotes.txt`
+        echo "ReleaseNotes=$ReleaseNotes" >> $GITHUB_ENV
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
