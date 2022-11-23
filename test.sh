@@ -4,7 +4,7 @@ IFS=','
 read -ra arr <<< "$ReleaseNotes"
 for val in "${arr[@]}";
 do
-  ReleaseNotes=$val
+ ReleaseNotes=$val
  echo "- ${ReleaseNotes^}"
  ReleaseNotes=`echo "- ${ReleaseNotes^}"`
 done
