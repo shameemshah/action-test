@@ -71,8 +71,8 @@ jobs:
        with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: ${{ steps.bump_version.outputs.next-version }}
-          prerelease: true
-          title: "${{ steps.bump_version.outputs.next-version }} Build"
+          prerelease: false
+          title: "V${{ steps.bump_version.outputs.next-version }} Build"
           files: |
             LICENSE.txt
             *.jar
