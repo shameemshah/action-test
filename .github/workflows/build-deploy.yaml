@@ -7,9 +7,9 @@ on:
         default: 'warning'
         type: choice
         options:
-        - Major
-        - Feature
-        - Bug
+        - major
+        - feature
+        - bug
       ReleaseNote:
         description: 'Release Note'
         required: true
@@ -24,7 +24,7 @@ jobs:
         then
           echo "Branch validation Successful "      
         else
-          echo "Branch not configured!"
+          echo "Releases only taken from main branch"
           exit 1
         fi
      - uses: actions/checkout@main
@@ -51,3 +51,18 @@ jobs:
           git config user.email github-actions@github.com
           git tag ${{ steps.bump_version.outputs.next-version }}
           git push origin ${{ steps.bump_version.outputs.next-version }}
+      
+     - name: Create Release
+       id: create_release
+       uses: actions/create-release@v1
+       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+       with:
+         tag_name: ${{ steps.bump_version.outputs.next-version }}
+         release_name: Release ${{ github.ref }}
+         body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+         draft: false
+         prerelease: false
