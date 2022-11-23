@@ -64,7 +64,7 @@ jobs:
          tag_name: ${{ steps.bump_version.outputs.next-version }}
          release_name: Release V.${{ steps.bump_version.outputs.next-version }}
          body: |
-            ${{ inputs.ReleaseType }} Release
+            # ${{ inputs.ReleaseType }} Release
             ## Changelog             
                ${{ inputs.ReleaseNote }}
          draft: false
