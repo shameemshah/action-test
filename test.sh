@@ -1,14 +1,10 @@
 #! /bin/bash 
-ReleaseNotes=LeloSch,jkame,Kkashi,Wrath
+ReleaseNotes=LeloSch,jkame,Kakashi,Wrath
 IFS=','
 read -ra arr <<< "$ReleaseNotes"
 for val in "${arr[@]}";
 do
-  ReleaseNotes=`printf " - $val\n"`
-  echo $ReleaseNotes
+  ReleaseNotes=$val
+ echo "- ${ReleaseNotes^}"
+ ReleaseNotes=`echo "- ${ReleaseNotes^}"`
 done
-
-foo="one two three"
-foo=( $foo ) # without quotes
-foo="${foo[@]^}"
-echo $foo
