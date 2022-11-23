@@ -51,7 +51,11 @@ jobs:
           git config user.email github-actions@github.com
           git tag ${{ steps.bump_version.outputs.next-version }}
           git push origin ${{ steps.bump_version.outputs.next-version }}
-      
+     - name: "Build Changelog"
+       id: build_changelog
+       uses: mikepenz/release-changelog-builder-action@{latest-release}
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      - name: Create Release
        id: create_release
        uses: actions/create-release@v1
@@ -65,6 +69,8 @@ jobs:
             ## Changelog
                
                ${{ inputs.ReleaseNote }}
+               ${{steps.build_changelog.outputs.changelog}}
+               ${{steps.build_changelog.outputs.pull_requests}}
          draft: false
          prerelease: false
 
