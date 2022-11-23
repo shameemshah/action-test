@@ -33,13 +33,10 @@ jobs:
         read -ra arr <<< "$ReleaseNotes"
         for val in "${arr[@]}";
         do
-          ReleaseNotes=`printf " -  $val\n"`
-          echo "ReleaseNotes=$ReleaseNotes" >> $GITHUB_ENV
+          ReleaseNotes=$val
+         echo "- ${ReleaseNotes^}"
+         ReleaseNotes=`echo "- ${ReleaseNotes^}"`
         done
-     - id: ReleaseNote
-       uses: ASzc/change-string-case-action@v5
-       with:
-        string: "${{ env.ReleaseNotes }}"
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
