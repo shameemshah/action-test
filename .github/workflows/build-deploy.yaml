@@ -34,9 +34,12 @@ jobs:
         for val in "${arr[@]}";
         do
           ReleaseNotes=`printf " -  $val\n"`
-          echo $ReleaseNotes
+          echo "ReleaseNotes=$ReleaseNotes" >> $GITHUB_ENV
         done
-
+     - id: ReleaseNote
+       uses: ASzc/change-string-case-action@v5
+       with:
+        string: "${{ env.ReleaseNotes }}"
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
