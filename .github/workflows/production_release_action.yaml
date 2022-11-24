@@ -45,8 +45,15 @@ jobs:
             echo "Previous commit sha: $sha"
         fi
 
+
         PreviousSha=${{ github.sha }}
         echo $PreviousSha
+
+        n=`echo -n "$sha"|wc -c`
+        echo "sha : $n "
+
+        n=`echo -n "$PreviousSha"|wc -c`
+        echo "Prsha : $n "
 
         if [[ $sha == $PreviousSha ]]
         then

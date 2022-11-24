@@ -16,3 +16,8 @@ then
   echo "Nothing changed from last release"
   exit 1
 fi
+
+
+str="abc"
+n=`echo -n "$str"|wc -c`
+echo "Length of the string is : $n "
