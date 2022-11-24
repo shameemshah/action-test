@@ -77,7 +77,9 @@ jobs:
             try {
               const target_commitish = '${{ github.ref_name }}';
               let version = target_commitish.replace('${{ env.RELEASE_BRANCH_PREFIX }}', '')
-              core.setOutput("rc-version", `${version}rc${{ github.run_id }}`);
+              let release = releases.find((e) => {
+                return target_commitish.endsWith(e.target_commitish) && e.draft
+              })
               await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
