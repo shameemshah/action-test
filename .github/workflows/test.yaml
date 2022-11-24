@@ -79,6 +79,10 @@ jobs:
               let release = releases.find((e) => {
                 return target_commitish.endsWith(e.target_commitish) && e.draft
               })
+              const {data: releases} = await github.rest.repos.listReleases({
+                  owner,
+                  repo,
+              });
               await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
