@@ -30,45 +30,16 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
+        
      - uses: actions/checkout@main
        with:
           fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
-          
-     - uses: dorny/paths-filter@v2
-       id: changes
-       with:
-         filters: |
-           src:
-             - 'label_studio/!(frontend)/**'
-             - 'deploy/requirements**'
-             - 'setup.py'
-           frontend:
-             - 'label_studio/frontend/**'
-           docker:
-             - 'label_studio/**'
-             - 'deploy/**'
-             - 'Dockerfile**'
-             - 'setup.py'
-             - '.github/workflows/cicd_pipeline.yml'
-             - '.github/workflows/docker-build.yml'
-     - uses: actions/github-script@v6
-       id: commit-details
-       with:
-         script: |
-           const { repo, owner } = context.repo;
-           const { data: commit } = await github.rest.repos.getCommit({
-               owner,
-               repo,
-               ref: '${{ github.event.pull_request.head.sha || github.event.after }}'
-           });
-           core.setOutput("commit-message", commit.commit.message);
+
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
         string: ${{ inputs.ReleaseType }}
     
-
-
      - name: 'Get Previous tag'
        id: previoustag
        uses: "WyriHaximus/github-action-get-previous-tag@v1"
@@ -99,10 +70,14 @@ jobs:
        env: 
         RELEASE_TAG: ${{ steps.bump_version.outputs.next-version }}
         RELEASE_NAME: ${{ inputs.ReleaseType }} Release V. ${{ steps.bump_version.outputs.next-version }}
+        RELEASE_BRANCH_PREFIX: main
        with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
             try {
+              const target_commitish = '${{ github.ref_name }}';
+              let version = target_commitish.replace('${{ env.RELEASE_BRANCH_PREFIX }}', '')
+              core.setOutput("rc-version", `${version}rc${{ github.run_id }}`);
               await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
