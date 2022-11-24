@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - id: PreValidation 
+       env:
+        GITHUB_TOKEN: ${{ github.token }}
+        REPOSITORY: ${{ github.repository }}
        run: |
         BRANCH="${GITHUB_REF#refs/heads/}"
         if [ $BRANCH == 'main' ]
@@ -29,9 +32,19 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
-        LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/shameemshah/action-test/releases/latest)
-        LATEST_VERSION_TAG=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
-        echo LATEST_RELEASE:$LATEST_VERSION_TAG
+
+        repo=$REPOSITORY
+        tag=$(curl -s "https://api.github.com/repos/$repo/releases/latest" | jq -r '.tag_name')
+        read type tag_sha < <(echo $(curl -s "https://api.github.com/repos/$repo/git/ref/tags/$tag" | 
+             jq -r '.object.type,.object.sha'))
+
+        if [ $type == "commit" ]; then
+            echo "commit sha: $tag_sha"
+        else
+            sha=$(curl -s "https://api.github.com/repos/$repo/git/tags/$tag_sha" | jq '.object.sha')
+            echo "commit sha: $sha"
+        fi
+
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
