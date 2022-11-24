@@ -29,7 +29,15 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
+
+     - id: releasetype
+       uses: ASzc/change-string-case-action@v5
+       with:
+        string: ${{ inputs.ReleaseType }}
     
+     - uses: actions/checkout@main
+       with:
+          fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
      - uses: actions/github-script@v6
        id: commit-details
        with:
@@ -41,16 +49,7 @@ jobs:
               ref: '${{ github.event.pull_request.head.sha || github.event.after }}'
           });
           core.setOutput("commit-message", commit.commit.message);
-
-     - id: releasetype
-       uses: ASzc/change-string-case-action@v5
-       with:
-        string: ${{ inputs.ReleaseType }}
-    
-     - uses: actions/checkout@main
-       with:
-          fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
-    
+          
      - name: 'Get Previous tag'
        id: previoustag
        uses: "WyriHaximus/github-action-get-previous-tag@v1"
