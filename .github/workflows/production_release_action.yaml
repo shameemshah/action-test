@@ -11,14 +11,12 @@ on:
         - Major
         - Feature
         - Bug
-      ReleaseNote:
-        description: 'Release Note'
-        required: true
 
 jobs:
   TaggingAndRelease:
     runs-on: ubuntu-latest
     steps:
+     
      - uses: actions/checkout@main
        with:
           fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
