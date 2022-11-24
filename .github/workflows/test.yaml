@@ -75,14 +75,6 @@ jobs:
           script: |
             try {
               const target_commitish = '${{ github.ref_name }}';
-              let version = target_commitish.replace('${{ env.RELEASE_BRANCH_PREFIX }}', '')
-              const {data: releases} = await github.rest.repos.listReleases({
-                  owner,
-                  repo,
-              });
-              let release = releases.find((e) => {
-                return target_commitish.endsWith(e.target_commitish) && e.draft
-              })
               await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
