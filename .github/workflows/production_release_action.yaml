@@ -29,7 +29,9 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
-
+        LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/bukukasio/lummo-sqlproxy/releases/latest)
+        LATEST_VERSION_TAG=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
+        echo LATEST_RELEASE:$LATEST_VERSION_TAG
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
