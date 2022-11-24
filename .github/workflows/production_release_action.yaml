@@ -51,7 +51,28 @@ jobs:
        with:
         current-version: ${{ steps.previoustag.outputs.tag }}
         version-fragment: ${{ steps.releasetype.outputs.lowercase }}
-    
+
+     - name: Get changed files
+       id: changed-files
+       uses: tj-actions/changed-files@v34
+
+     - name: List all changed files
+       run: |
+        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          echo "$file was changed"
+        done
+
+     - name: Make changes
+       run: touch change.temp
+     # This step will evaluate the repo status and report the change
+     - name: Check if there are changes
+       id: changes
+       uses: UnicornGlobal/has-changes-action@v1.0.11
+     # You can now access a variable indicating if there have been changes
+     - name: Process changes
+       if: steps.changes.outputs.changed == 1
+       run: echo "Changes exist"
+
      - name: Release Details
        run: |
           echo "Release type ${{ inputs.ReleaseType }}" >> $GITHUB_STEP_SUMMARY
