@@ -29,29 +29,46 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
+    
+     - uses: actions/github-script@v6
+       id: commit-details
+       with:
+        script: |
+          const { repo, owner } = context.repo;
+          const { data: commit } = await github.rest.repos.getCommit({
+              owner,
+              repo,
+              ref: '${{ github.event.pull_request.head.sha || github.event.after }}'
+          });
+          core.setOutput("commit-message", commit.commit.message);
+
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
         string: ${{ inputs.ReleaseType }}
+    
      - uses: actions/checkout@main
        with:
           fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
+    
      - name: 'Get Previous tag'
        id: previoustag
        uses: "WyriHaximus/github-action-get-previous-tag@v1"
        with:
         fallback: 0.0.1 # Optional fallback tag to use when no tag can be found
+    
      - name: Bump release version
        id: bump_version
        uses: christian-draeger/increment-semantic-version@1.0.3
        with:
         current-version: ${{ steps.previoustag.outputs.tag }}
         version-fragment: ${{ steps.releasetype.outputs.lowercase }}
+    
      - name: Release Details
        run: |
           echo "Release type ${{ inputs.ReleaseType }}" >> $GITHUB_STEP_SUMMARY
           echo V.${{ steps.bump_version.outputs.next-version }} >> $GITHUB_STEP_SUMMARY
-
+          echo ${{ steps.commit-details.outputs.commit-message }}
      - name: push new version tag
        uses: actions/checkout@v3
      - run: |
