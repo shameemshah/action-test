@@ -30,7 +30,7 @@ jobs:
         then
           echo "Branch validation Successful "      
         else
-          echo "Releases only taken from main branch"
+          echo "Releases only taken from main branch :gun: " >> $GITHUB_STEP_SUMMARY
           exit 1
         fi
 
@@ -43,20 +43,10 @@ jobs:
         else
             sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/tags/$tag_sha" | jq '.object.sha')
         fi
-
-
         PreviousSha=${{ github.sha }}
-        echo $PreviousSha
-
-        n=`echo -n "$tag_sha"|wc -c`
-        echo "sha : $n "
-
-        n=`echo -n "$PreviousSha"|wc -c`
-        echo "Prsha : $n "
-
         if [[ $tag_sha == $PreviousSha ]]
         then
-          echo "Nothing changed from last release" >> $GITHUB_STEP_SUMMARY
+          echo "Nothing changed from last release :banana:" >> $GITHUB_STEP_SUMMARY
           exit 1
         fi
 
@@ -81,7 +71,7 @@ jobs:
      - name: Release Details
        run: |
           echo "Release type ${{ inputs.ReleaseType }}" >> $GITHUB_STEP_SUMMARY
-          echo V.${{ steps.bump_version.outputs.next-version }} >> $GITHUB_STEP_SUMMARY
+          echo :rocket: V.${{ steps.bump_version.outputs.next-version }} >> $GITHUB_STEP_SUMMARY
      - name: push new version tag
        uses: actions/checkout@v3
      - run: |
