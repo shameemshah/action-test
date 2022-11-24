@@ -14,6 +14,7 @@ on:
       ReleaseNote:
         description: 'Release Note'
         required: true
+permissions: read-all
 
 jobs:
   TaggingAndRelease:
@@ -29,7 +30,39 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
-
+     - name: Checkout
+       if: github.event_name == 'push'
+       uses: actions/checkout@v3
+       with:
+         ref: ${{ github.ref }}
+     - uses: dorny/paths-filter@v2
+       id: changes
+       with:
+         filters: |
+           src:
+             - 'label_studio/!(frontend)/**'
+             - 'deploy/requirements**'
+             - 'setup.py'
+           frontend:
+             - 'label_studio/frontend/**'
+           docker:
+             - 'label_studio/**'
+             - 'deploy/**'
+             - 'Dockerfile**'
+             - 'setup.py'
+             - '.github/workflows/cicd_pipeline.yml'
+             - '.github/workflows/docker-build.yml'
+     - uses: actions/github-script@v6
+       id: commit-details
+       with:
+         script: |
+           const { repo, owner } = context.repo;
+           const { data: commit } = await github.rest.repos.getCommit({
+               owner,
+               repo,
+               ref: '${{ github.event.pull_request.head.sha || github.event.after }}'
+           });
+           core.setOutput("commit-message", commit.commit.message);
      - id: releasetype
        uses: ASzc/change-string-case-action@v5
        with:
@@ -81,6 +114,7 @@ jobs:
                 prerelease: false,
                 repo: context.repo.repo,
                 tag_name: process.env.RELEASE_TAG,
+                target_commitish: target_commitish,
               });
             } catch (error) {
               core.setFailed(error.message);
