@@ -33,6 +33,7 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
+
         tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
         read type tag_sha < <(echo $(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/ref/tags/$tag" | 
              jq -r '.object.type,.object.sha'))
@@ -41,9 +42,10 @@ jobs:
             echo "commit sha: $tag_sha"
         else
             sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/tags/$tag_sha" | jq '.object.sha')
-            echo "commit sha: $sha"
+            echo "Previous commit sha: $sha"
         fi
-        if [ $sha == ${{ github.sha }} ]
+        PreviousSha=${{ github.sha }}
+        if [ $sha == $PreviousSha ]
         then
           echo "Nothing changed from last release" >> $GITHUB_STEP_SUMMARY
           exit 1
