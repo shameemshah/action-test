@@ -19,9 +19,11 @@ jobs:
   TaggingAndRelease:
     runs-on: ubuntu-latest
     steps:
+     - uses: actions/checkout@main
+       with:
+          fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
+    
      - id: PreValidation 
-       env:
-        REPOSITORY: ${{ github.repository }}
        run: |
         BRANCH="${GITHUB_REF#refs/heads/}"
         if [ $BRANCH == 'main' ]
@@ -31,18 +33,20 @@ jobs:
           echo "Releases only taken from main branch"
           exit 1
         fi
-
-        repo=$REPOSITORY
-        echo $repo
-        tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$repo/releases/latest" | jq -r '.tag_name')
-        read type tag_sha < <(echo $(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$repo/git/ref/tags/$tag" | 
+        tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
+        read type tag_sha < <(echo $(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/ref/tags/$tag" | 
              jq -r '.object.type,.object.sha'))
 
         if [ $type == "commit" ]; then
             echo "commit sha: $tag_sha"
         else
-            sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/$repo/git/tags/$tag_sha" | jq '.object.sha')
+            sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/tags/$tag_sha" | jq '.object.sha')
             echo "commit sha: $sha"
+        fi
+        if [ $sha == ${{ github.sha }} ]
+        then
+          echo "Nothing changed from last release" >> $GITHUB_STEP_SUMMARY
+          exit 1
         fi
 
      - id: releasetype
@@ -50,10 +54,6 @@ jobs:
        with:
         string: ${{ inputs.ReleaseType }}
     
-     - uses: actions/checkout@main
-       with:
-          fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
-
      - name: 'Get Previous tag'
        id: previoustag
        uses: "WyriHaximus/github-action-get-previous-tag@v1"
@@ -66,16 +66,6 @@ jobs:
        with:
         current-version: ${{ steps.previoustag.outputs.tag }}
         version-fragment: ${{ steps.releasetype.outputs.lowercase }}
-
-     - name: Get changed files
-       id: changed-files
-       uses: tj-actions/changed-files@v34
-
-     - name: List all changed files
-       run: |
-        for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-          echo "$file was changed"
-        done
 
      - name: Release Details
        run: |
