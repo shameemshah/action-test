@@ -49,7 +49,7 @@ jobs:
         version-fragment: ${{ steps.releasetype.outputs.lowercase }}
      - name: Release Details
        run: |
-          echo "Release type ${{ inputs.ReleaseType }} >> $GITHUB_STEP_SUMMARY
+          echo "Release type ${{ inputs.ReleaseType }}" >> $GITHUB_STEP_SUMMARY
           echo V.${{ steps.bump_version.outputs.next-version }} >> $GITHUB_STEP_SUMMARY
 
      - name: push new version tag
