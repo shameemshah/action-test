@@ -1,4 +1,4 @@
-name: Production-Release
+name: Production-Release-test
 on:
   workflow_dispatch:
     inputs:
@@ -68,6 +68,7 @@ jobs:
        uses: "actions/github-script@v6"
        env: 
         RELEASE_TAG: ${{ steps.bump_version.outputs.next-version }}
+        RELEASE_NAME: ${{ inputs.ReleaseType }} Release V. ${{ steps.bump_version.outputs.next-version }}
        with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
@@ -75,7 +76,7 @@ jobs:
               await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
-                name: process.env.RELEASE_TAG,
+                name: process.env.RELEASE_NAME,
                 owner: context.repo.owner,
                 prerelease: false,
                 repo: context.repo.repo,
