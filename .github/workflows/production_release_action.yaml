@@ -44,8 +44,10 @@ jobs:
             sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/tags/$tag_sha" | jq '.object.sha')
             echo "Previous commit sha: $sha"
         fi
+
         PreviousSha=${{ github.sha }}
-        if [ $sha == $PreviousSha ]
+        echo $PreviousSha
+        if [ $sha == "$PreviousSha" ]
         then
           echo "Nothing changed from last release" >> $GITHUB_STEP_SUMMARY
           exit 1
