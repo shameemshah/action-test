@@ -42,7 +42,7 @@ jobs:
             echo "commit sha: $tag_sha"
         else
             sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/tags/$tag_sha" | jq '.object.sha')
-            echo "Previous commit sha: $sha"
+            # echo "Previous commit sha: $sha"
             PreviousSha=${{ github.sha }}
             n=`echo -n "$sha"|wc -c`
             echo "sha : $n "
