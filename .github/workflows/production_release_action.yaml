@@ -48,7 +48,7 @@ jobs:
         PreviousSha=${{ github.sha }}
         echo $PreviousSha
 
-        if [ "$sha" == "$PreviousSha" ]
+        if [[ $sha == $PreviousSha ]]
         then
           echo "Nothing changed from last release" >> $GITHUB_STEP_SUMMARY
           exit 1
