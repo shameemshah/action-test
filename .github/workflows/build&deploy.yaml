@@ -5,6 +5,8 @@ on:
     branches:
     - dev
     - sta
+    tags:        
+      - '*' 
 
 jobs:
   # Preparing the build environment variables
