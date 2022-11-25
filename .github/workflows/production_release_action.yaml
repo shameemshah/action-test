@@ -16,8 +16,6 @@ jobs:
   TaggingAndRelease:
     runs-on: ubuntu-latest
     timeout-minutes: 2
-    outputs:
-      NEWVERSION: ${{ steps.bump_version.outputs.next-version }}
     steps:
      
      - uses: actions/checkout@main
@@ -73,8 +71,7 @@ jobs:
        run: |
           echo "Release type ${{ inputs.ReleaseType }}" >> $GITHUB_STEP_SUMMARY
           echo :rocket: v.${{ steps.bump_version.outputs.next-version }} >> $GITHUB_STEP_SUMMARY
-     - name: push new version tag
-       uses: actions/checkout@v3
+
      - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -84,38 +81,3 @@ jobs:
      - name: Cancelling parallel jobs
        if: failure()
        uses: andymckay/cancel-action@0.3
- 
-  slack-notification:
-       name: Slack Notification
-       if: always()
-       runs-on: ubuntu-latest
-       needs:
-         - TaggingAndRelease
-       env:
-         SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
-         NEWVERSION: ${{needs.TaggingAndRelease.outputs.NEWVERSION}}
-       steps:
-       - uses: technote-space/workflow-conclusion-action@v3
-       - name: Update slack message body 
-         id: body
-         run: |
-           if [ '${{ env.WORKFLOW_CONCLUSION }}' == 'success' ] 
-           then
-             echo "SLACK_MESSAGE=Version $NEWVERSION Taggged Successfully :white_check_mark:" >> $GITHUB_ENV
-           elif [ '${{ env.WORKFLOW_CONCLUSION }}'  == 'failure' ] 
-           then
-             echo "SLACK_MESSAGE=Failed :x:"  >> $GITHUB_ENV
-           elif [ '${{ env.WORKFLOW_CONCLUSION }}'  == 'cancelled' ] 
-           then
-             echo "SLACK_MESSAGE=Cancelled :grey_exclamation:" >> $GITHUB_ENV
-           fi
-       - name: Slack Notification
-         uses: rtCamp/action-slack-notify@v2
-         env:
-           SLACK_COLOR: ${{ env.WORKFLOW_CONCLUSION }} # or a specific color like 'good' or '#ff00ff'
-           SLACK_ICON: https://taxcryp.com/images/taxcryp_logo_new.png
-           SLACK_MESSAGE: "${{ env.SLACK_MESSAGE }}"
-           SLACK_TITLE: Build Status
-           SLACK_FOOTER: '<${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>'
-           SLACK_USERNAME: Shameem-test
-           SLACK_WEBHOOK: $SLACK_WEBHOOK_URL
