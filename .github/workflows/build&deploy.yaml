@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - develop
-    - staging
+    - dev
+    - sta
 
 jobs:
   # Preparing the build environment variables
