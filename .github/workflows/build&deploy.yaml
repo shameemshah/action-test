@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: Non Production Release
 on:
   workflow_dispatch:
   push:
