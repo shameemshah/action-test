@@ -92,7 +92,7 @@ jobs:
        needs:
          - TaggingAndRelease
        env:
-         SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+         SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
          NEWVERSION: ${{needs.TaggingAndRelease.outputs.NEWVERSION}}
        steps:
        - uses: technote-space/workflow-conclusion-action@v3
