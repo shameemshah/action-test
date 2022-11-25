@@ -118,4 +118,4 @@ jobs:
            SLACK_TITLE: Build Status
            SLACK_FOOTER: '<${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>'
            SLACK_USERNAME: Shameem-test
-           SLACK_WEBHOOK: ${{ secrets[env.SLACK_WEBHOOK_URL] }}
+           SLACK_WEBHOOK: $SLACK_WEBHOOK_URL
