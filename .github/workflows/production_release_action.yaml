@@ -20,6 +20,17 @@ jobs:
      - uses: actions/checkout@main
        with:
           fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
+
+     - id: releasetype
+       uses: ASzc/change-string-case-action@v5
+       with:
+        string: ${{ inputs.ReleaseType }}
+    
+     - name: 'Get Previous tag'
+       id: previoustag
+       uses: "WyriHaximus/github-action-get-previous-tag@v1"
+       with:
+        fallback: 0.0.1 # Optional fallback tag to use when no tag can be found
     
      - id: PreValidation 
        run: |
@@ -32,7 +43,7 @@ jobs:
           exit 1
         fi
 
-        tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
+        tag=${{ steps.previoustag.outputs.tag }}
         read type tag_sha < <(echo $(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/ref/tags/$tag" | 
              jq -r '.object.type,.object.sha'))
 
@@ -47,17 +58,6 @@ jobs:
           echo "Nothing changed from last release :banana:" >> $GITHUB_STEP_SUMMARY
           exit 1
         fi
-
-     - id: releasetype
-       uses: ASzc/change-string-case-action@v5
-       with:
-        string: ${{ inputs.ReleaseType }}
-    
-     - name: 'Get Previous tag'
-       id: previoustag
-       uses: "WyriHaximus/github-action-get-previous-tag@v1"
-       with:
-        fallback: 0.0.1 # Optional fallback tag to use when no tag can be found
     
      - name: Bump release version
        id: bump_version
