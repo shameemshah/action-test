@@ -78,12 +78,9 @@ jobs:
           git tag ${{ steps.bump_version.outputs.next-version }}
           git push origin ${{ steps.bump_version.outputs.next-version }}
 
-     - uses: vishnudxb/cancel-workflow@v1.2
+     - name: Cancelling parallel jobs
        if: failure()
-       with:
-         repo: octocat/hello-world
-         workflow_id: ${{ github.run_id }}
-         access_token: ${{ github.token }}
+       uses: andymckay/cancel-action@0.2
     #  - name: "Create release"
     #    uses: "actions/github-script@v6"
     #    env: 
