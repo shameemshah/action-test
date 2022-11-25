@@ -80,7 +80,7 @@ jobs:
 
      - name: Cancelling parallel jobs
        if: failure()
-       uses: andymckay/cancel-action@0.2
+       uses: andymckay/cancel-action@latest
     #  - name: "Create release"
     #    uses: "actions/github-script@v6"
     #    env: 
