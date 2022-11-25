@@ -78,6 +78,12 @@ jobs:
           git tag ${{ steps.bump_version.outputs.next-version }}
           git push origin ${{ steps.bump_version.outputs.next-version }}
 
+     - uses: vishnudxb/cancel-workflow@v1.2
+       if: failure()
+       with:
+         repo: octocat/hello-world
+         workflow_id: ${{ github.run_id }}
+         access_token: ${{ github.token }}
     #  - name: "Create release"
     #    uses: "actions/github-script@v6"
     #    env: 
