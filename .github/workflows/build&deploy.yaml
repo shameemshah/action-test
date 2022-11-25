@@ -2,9 +2,9 @@ name: Build & Deploy
 on:
   workflow_dispatch:
   push:
-    # branches:
-    # - dev
-    # - sta
+    branches:
+    - dev
+    - sta
   create:
     tags:        
       - '[0-9]+.[0-9]+.[0-9]+'
