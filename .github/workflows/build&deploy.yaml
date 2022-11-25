@@ -1,0 +1,18 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - develop
+    - staging
+
+jobs:
+  # Preparing the build environment variables
+  prepare-env:
+    name: Prepare Env
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+    - id: vars
+      run: |
+        echo "build success"
