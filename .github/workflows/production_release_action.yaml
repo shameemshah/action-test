@@ -15,6 +15,9 @@ on:
 jobs:
   TaggingAndRelease:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      NEWVERSION: ${{ steps.bump_version.outputs.next-version }}
     steps:
      
      - uses: actions/checkout@main
@@ -81,26 +84,38 @@ jobs:
      - name: Cancelling parallel jobs
        if: failure()
        uses: andymckay/cancel-action@0.3
-    #  - name: "Create release"
-    #    uses: "actions/github-script@v6"
-    #    env: 
-    #     RELEASE_TAG: ${{ steps.bump_version.outputs.next-version }}
-    #     RELEASE_NAME: ${{ inputs.ReleaseType }} Release V. ${{ steps.bump_version.outputs.next-version }}
-    #    with:
-    #       github-token: "${{ secrets.GITHUB_TOKEN }}"
-    #       script: |
-    #         try {
-    #           await github.rest.repos.createRelease({
-    #             draft: false,
-    #             generate_release_notes: true,
-    #             name: process.env.RELEASE_NAME,
-    #             owner: context.repo.owner,
-    #             prerelease: false,
-    #             repo: context.repo.repo,
-    #             tag_name: process.env.RELEASE_TAG,
-    #           });
-    #         } catch (error) {
-    #           core.setFailed(error.message);
-    #         }
-
-
+ 
+  slack-notification:
+       name: Slack Notification
+       if: always()
+       runs-on: ubuntu-latest
+       needs:
+         - TaggingAndRelease
+       env:
+         SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+         NEWVERSION: ${{needs.TaggingAndRelease.outputs.NEWVERSION}}
+       steps:
+       - uses: technote-space/workflow-conclusion-action@v3
+       - name: Update slack message body 
+         id: body
+         run: |
+           if [ '${{ env.WORKFLOW_CONCLUSION }}' == 'success' ] 
+           then
+             echo "SLACK_MESSAGE=Version $NEWVERSION Taggged Successfully :white_check_mark:" >> $GITHUB_ENV
+           elif [ '${{ env.WORKFLOW_CONCLUSION }}'  == 'failure' ] 
+           then
+             echo "SLACK_MESSAGE=Failed :x:"  >> $GITHUB_ENV
+           elif [ '${{ env.WORKFLOW_CONCLUSION }}'  == 'cancelled' ] 
+           then
+             echo "SLACK_MESSAGE=Cancelled :grey_exclamation:" >> $GITHUB_ENV
+           fi
+       - name: Slack Notification
+         uses: rtCamp/action-slack-notify@v2
+         env:
+           SLACK_COLOR: ${{ env.WORKFLOW_CONCLUSION }} # or a specific color like 'good' or '#ff00ff'
+           SLACK_ICON: https://taxcryp.com/images/taxcryp_logo_new.png
+           SLACK_MESSAGE: "${{ env.SLACK_MESSAGE }}"
+           SLACK_TITLE: Build Status
+           SLACK_FOOTER: '<${{ github.server_url }}/${{ github.repository }}|${{ github.repository }}>'
+           SLACK_USERNAME: Shameem-test
+           SLACK_WEBHOOK: ${{ secrets[env.SLACK_WEBHOOK_URL] }}
