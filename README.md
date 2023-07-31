@@ -874,3 +874,5 @@ Commit 436: Removed feature - 778
 Commit 437: Modified config - 949
 
 Commit 438: Implemented bug - 946
+
+Commit 439: Removed test - 233
