@@ -362,3 +362,5 @@ Commit 180: Removed documentation - 185
 Commit 181: Removed bug - 961
 
 Commit 182: Updated style - 110
+
+Commit 183: Fixed config - 525
