@@ -170,3 +170,5 @@ Commit 84: Modified documentation - 303
 Commit 85: Removed code - 965
 
 Commit 86: Implemented code - 379
+
+Commit 87: Refactored test - 608
