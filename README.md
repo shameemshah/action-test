@@ -46,3 +46,5 @@ Commit 22: Modified feature - 441
 Commit 23: Refactored feature - 730
 
 Commit 24: Fixed code - 509
+
+Commit 25: Refactored config - 737
