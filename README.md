@@ -502,3 +502,5 @@ Commit 250: Fixed feature - 176
 Commit 251: Implemented test - 601
 
 Commit 252: Updated style - 971
+
+Commit 253: Fixed config - 515
