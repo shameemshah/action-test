@@ -740,3 +740,5 @@ Commit 369: Fixed code - 792
 Commit 370: Updated documentation - 600
 
 Commit 371: Added feature - 740
+
+Commit 372: Removed config - 158
