@@ -968,3 +968,5 @@ Commit 483: Implemented feature - 488
 Commit 484: Added test - 953
 
 Commit 485: Refactored code - 668
+
+Commit 486: Modified config - 241
