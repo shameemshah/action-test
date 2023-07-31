@@ -1,3 +1,3 @@
-# Random Cartoon Story 266
+# Random Cartoon Story 267
 
-Upon discovering an ancient artifact, Winter Soldier and Ant-Man unlocked unimaginable powers and became the last hope for secret garden.
+Deep inside a mysterious forest, Winter Soldier and Venom encountered a friendly tribe of gnomes. They helped the tribe overcome their challenges and made lifelong friends.
