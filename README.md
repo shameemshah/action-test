@@ -1,3 +1,3 @@
-# Random Cartoon Story 21
+# Random Cartoon Story 22
 
-On a beautiful sunny day, Captain Marvel and Captain Marvel embarked on a mission to save secret garden from an evil [Villain]. They used their special powers to defeat the villain and restore peace.
+Green Goblin and Doctor Doom were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Cleopatra.
