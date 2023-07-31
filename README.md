@@ -238,3 +238,5 @@ Commit 118: Implemented feature - 292
 Commit 119: Added config - 500
 
 Commit 120: Removed bug - 326
+
+Commit 121: Refactored test - 271
