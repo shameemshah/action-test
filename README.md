@@ -1,3 +1,3 @@
-# Random Cartoon Story 1
+# Random Cartoon Story 2
 
-Doctor Doom and Gamora were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+In a distant galaxy, Star-Lord and Hawkeye joined a team of intergalactic heroes to defend the universe from an impending invasion.
