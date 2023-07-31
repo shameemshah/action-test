@@ -598,3 +598,5 @@ Commit 298: Fixed code - 372
 Commit 299: Fixed feature - 291
 
 Commit 300: Fixed feature - 366
+
+Commit 301: Removed bug - 815
