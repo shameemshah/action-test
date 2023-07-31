@@ -32,3 +32,5 @@ Commit 15: Added bug - 379
 Commit 16: Implemented test - 961
 
 Commit 17: Updated style - 207
+
+Commit 18: Refactored code - 340
