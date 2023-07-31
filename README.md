@@ -28,3 +28,5 @@ Commit 13: Modified bug - 688
 Commit 14: Implemented documentation - 434
 
 Commit 15: Added bug - 379
+
+Commit 16: Implemented test - 961
