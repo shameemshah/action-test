@@ -444,3 +444,5 @@ Commit 221: Implemented bug - 250
 Commit 222: Fixed config - 614
 
 Commit 223: Removed documentation - 974
+
+Commit 224: Fixed test - 659
