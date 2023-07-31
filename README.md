@@ -688,3 +688,5 @@ Commit 343: Modified documentation - 641
 Commit 344: Fixed test - 945
 
 Commit 345: Refactored feature - 217
+
+Commit 346: Removed documentation - 181
