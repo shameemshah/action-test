@@ -90,3 +90,5 @@ Commit 44: Added style - 665
 Commit 45: Added documentation - 779
 
 Commit 46: Implemented bug - 792
+
+Commit 47: Implemented feature - 780
