@@ -176,3 +176,5 @@ Commit 87: Refactored test - 608
 Commit 88: Updated style - 397
 
 Commit 89: Fixed documentation - 122
+
+Commit 90: Refactored documentation - 566
