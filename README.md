@@ -56,3 +56,5 @@ Commit 27: Added test - 804
 Commit 28: Fixed config - 716
 
 Commit 29: Added test - 930
+
+Commit 30: Updated documentation - 159
