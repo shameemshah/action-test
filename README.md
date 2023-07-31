@@ -198,3 +198,5 @@ Commit 98: Implemented bug - 869
 Commit 99: Fixed documentation - 567
 
 Commit 100: Added config - 733
+
+Commit 101: Updated bug - 819
