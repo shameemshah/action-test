@@ -436,3 +436,5 @@ Commit 217: Added documentation - 377
 Commit 218: Implemented documentation - 959
 
 Commit 219: Fixed code - 406
+
+Commit 220: Modified test - 945
