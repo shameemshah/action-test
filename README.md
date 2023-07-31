@@ -1,3 +1,3 @@
-# Random Cartoon Story 149
+# Random Cartoon Story 150
 
-Mantis and Hawkeye found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
+In a land ruled by magical creatures, Captain America and Green Goblin sought to restore harmony between different species and bring peace to secret garden.
