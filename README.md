@@ -38,3 +38,5 @@ Commit 18: Refactored code - 340
 Commit 19: Refactored code - 977
 
 Commit 20: Modified style - 504
+
+Commit 21: Updated documentation - 881
