@@ -460,3 +460,5 @@ Commit 229: Added code - 989
 Commit 230: Fixed test - 675
 
 Commit 231: Updated documentation - 213
+
+Commit 232: Modified bug - 593
