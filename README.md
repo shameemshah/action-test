@@ -1,3 +1,3 @@
-# Random Cartoon Story 17
+# Random Cartoon Story 18
 
-Thor and Black Panther were students at a prestigious academy for aspiring heroes, where they honed their abilities and forged unbreakable friendships.
+Once upon a time, Captain America and Doctor Doom went on a grand adventure. They discovered secret garden and found a enchanted book.
