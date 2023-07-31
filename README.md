@@ -1,3 +1,3 @@
-# Random Cartoon Story 185
+# Random Cartoon Story 186
 
-The fate of underwater kingdom rested in the hands of Gamora and Drax as they faced their greatest challenge yet.
+Doctor Strange and Black Widow were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
