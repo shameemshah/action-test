@@ -1,3 +1,3 @@
-# Random Cartoon Story 102
+# Random Cartoon Story 103
 
-As members of a legendary order, Venom and Wasp faced the dark forces threatening to plunge the world into eternal darkness.
+Red Skull and Thanos were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
