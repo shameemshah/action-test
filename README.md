@@ -370,3 +370,5 @@ Commit 184: Added bug - 519
 Commit 185: Added test - 976
 
 Commit 186: Removed style - 638
+
+Commit 187: Fixed bug - 572
