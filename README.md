@@ -450,3 +450,5 @@ Commit 224: Fixed test - 659
 Commit 225: Refactored style - 801
 
 Commit 226: Fixed code - 290
+
+Commit 227: Implemented bug - 245
