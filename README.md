@@ -1,3 +1,3 @@
-# Random Cartoon Story 163
+# Random Cartoon Story 164
 
-In a steampunk-inspired world, Iron Man and Loki built incredible inventions and sought to uncover the secrets of a hidden society.
+Vision and Winter Soldier were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
