@@ -160,3 +160,5 @@ Commit 79: Removed bug - 766
 Commit 80: Removed feature - 409
 
 Commit 81: Added bug - 475
+
+Commit 82: Removed style - 557
