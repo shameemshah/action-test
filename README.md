@@ -196,3 +196,5 @@ Commit 97: Removed feature - 817
 Commit 98: Implemented bug - 869
 
 Commit 99: Fixed documentation - 567
+
+Commit 100: Added config - 733
