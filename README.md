@@ -1,3 +1,3 @@
-# Random Cartoon Story 50
+# Random Cartoon Story 51
 
-Hulk and Hulk were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+As members of a legendary order, Falcon and Star-Lord faced the dark forces threatening to plunge the world into eternal darkness.
