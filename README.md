@@ -546,3 +546,5 @@ Commit 272: Updated code - 303
 Commit 273: Removed style - 348
 
 Commit 274: Modified style - 209
+
+Commit 275: Refactored style - 676
