@@ -538,3 +538,5 @@ Commit 268: Modified code - 327
 Commit 269: Implemented config - 741
 
 Commit 270: Implemented bug - 952
+
+Commit 271: Refactored test - 494
