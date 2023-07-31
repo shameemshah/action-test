@@ -354,3 +354,5 @@ Commit 176: Implemented bug - 696
 Commit 177: Implemented test - 709
 
 Commit 178: Modified documentation - 399
+
+Commit 179: Removed documentation - 235
