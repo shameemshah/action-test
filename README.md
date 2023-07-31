@@ -1,3 +1,3 @@
-# Random Cartoon Story 3
+# Random Cartoon Story 4
 
-In a distant galaxy, Rocket and Thor joined a team of intergalactic heroes to defend the universe from an impending invasion.
+Once upon a time, Hulk and Black Panther went on a grand adventure. They discovered ancient ruins and found a time-traveling device.
