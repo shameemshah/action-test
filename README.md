@@ -484,3 +484,5 @@ Commit 241: Modified feature - 293
 Commit 242: Implemented code - 587
 
 Commit 243: Added documentation - 364
+
+Commit 244: Fixed test - 868
