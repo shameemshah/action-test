@@ -440,3 +440,5 @@ Commit 219: Fixed code - 406
 Commit 220: Modified test - 945
 
 Commit 221: Implemented bug - 250
+
+Commit 222: Fixed config - 614
