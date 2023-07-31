@@ -1,3 +1,3 @@
-# Random Cartoon Story 235
+# Random Cartoon Story 236
 
-As members of a legendary order, Rocket and Vision faced the dark forces threatening to plunge the world into eternal darkness.
+Star-Lord and Gamora were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Marie Curie.
