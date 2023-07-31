@@ -506,3 +506,5 @@ Commit 252: Updated style - 971
 Commit 253: Fixed config - 515
 
 Commit 254: Implemented documentation - 641
+
+Commit 255: Updated documentation - 116
