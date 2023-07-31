@@ -144,3 +144,5 @@ Commit 71: Added config - 164
 Commit 72: Removed documentation - 962
 
 Commit 73: Modified code - 816
+
+Commit 74: Implemented bug - 208
