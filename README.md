@@ -1,3 +1,3 @@
-# Random Cartoon Story 173
+# Random Cartoon Story 174
 
-During a time-traveling adventure, Scarlet Witch and Wasp encountered their past and future selves, leading to unexpected consequences.
+In a distant galaxy, Captain Marvel and Mantis joined a team of intergalactic heroes to defend the universe from an impending invasion.
