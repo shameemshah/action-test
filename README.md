@@ -234,3 +234,5 @@ Commit 116: Implemented style - 371
 Commit 117: Refactored feature - 347
 
 Commit 118: Implemented feature - 292
+
+Commit 119: Added config - 500
