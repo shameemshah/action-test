@@ -1,3 +1,3 @@
-# Random Cartoon Story 39
+# Random Cartoon Story 40
 
-Captain Marvel and Red Skull were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+Rocket and Iron Man were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Nelson Mandela.
