@@ -606,3 +606,5 @@ Commit 302: Removed style - 421
 Commit 303: Implemented config - 957
 
 Commit 304: Fixed code - 261
+
+Commit 305: Updated test - 475
