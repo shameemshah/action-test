@@ -986,3 +986,5 @@ Commit 492: Fixed bug - 513
 Commit 493: Implemented bug - 985
 
 Commit 494: Refactored bug - 980
+
+Commit 495: Updated config - 383
