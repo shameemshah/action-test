@@ -886,3 +886,5 @@ Commit 442: Modified documentation - 863
 Commit 443: Modified bug - 758
 
 Commit 444: Removed test - 186
+
+Commit 445: Refactored style - 371
