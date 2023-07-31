@@ -1,3 +1,3 @@
-# Random Cartoon Story 79
+# Random Cartoon Story 80
 
-Upon discovering an ancient artifact, Black Panther and Gamora unlocked unimaginable powers and became the last hope for fairy tale castle.
+Star-Lord and Doctor Doom found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
