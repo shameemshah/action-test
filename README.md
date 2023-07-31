@@ -636,3 +636,5 @@ Commit 317: Removed feature - 802
 Commit 318: Removed bug - 638
 
 Commit 319: Updated feature - 260
+
+Commit 320: Implemented style - 451
