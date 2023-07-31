@@ -1,3 +1,3 @@
-# Random Cartoon Story 133
+# Random Cartoon Story 134
 
-The fate of secret garden rested in the hands of Green Goblin and Captain Marvel as they faced their greatest challenge yet.
+As members of a legendary order, Venom and Ultron faced the dark forces threatening to plunge the world into eternal darkness.
