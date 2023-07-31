@@ -624,3 +624,5 @@ Commit 311: Updated code - 757
 Commit 312: Added style - 395
 
 Commit 313: Refactored documentation - 536
+
+Commit 314: Modified style - 388
