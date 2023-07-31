@@ -1,3 +1,3 @@
-# Random Cartoon Story 202
+# Random Cartoon Story 203
 
-In a distant galaxy, Ultron and Falcon joined a team of intergalactic heroes to defend the universe from an impending invasion.
+Thanos and Doctor Strange lived in a magical world filled with talking animals and friendly wizards. They had a pet friendly panda named Bubbles.
