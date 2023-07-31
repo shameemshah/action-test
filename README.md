@@ -736,3 +736,5 @@ Commit 367: Refactored bug - 986
 Commit 368: Removed code - 577
 
 Commit 369: Fixed code - 792
+
+Commit 370: Updated documentation - 600
