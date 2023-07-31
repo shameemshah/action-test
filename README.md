@@ -164,3 +164,5 @@ Commit 81: Added bug - 475
 Commit 82: Removed style - 557
 
 Commit 83: Modified documentation - 608
+
+Commit 84: Modified documentation - 303
