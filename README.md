@@ -2,3 +2,5 @@
 Commit 1: Modified feature - 360
 
 Commit 2: Fixed documentation - 196
+
+Commit 3: Updated feature - 226
