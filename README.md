@@ -1,3 +1,3 @@
-# Random Cartoon Story 80
+# Random Cartoon Story 81
 
-Star-Lord and Doctor Doom found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
+Black Panther and Black Widow were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Leonardo da Vinci.
