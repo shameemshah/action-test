@@ -1,3 +1,3 @@
-# Random Cartoon Story 7
+# Random Cartoon Story 8
 
-As members of a legendary order, Captain America and Hulk faced the dark forces threatening to plunge the world into eternal darkness.
+Upon discovering an ancient artifact, Spider-Man and Hulk unlocked unimaginable powers and became the last hope for underwater kingdom.
