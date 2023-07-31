@@ -954,3 +954,5 @@ Commit 476: Fixed test - 292
 Commit 477: Added style - 446
 
 Commit 478: Refactored style - 564
+
+Commit 479: Refactored config - 776
