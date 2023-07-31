@@ -578,3 +578,5 @@ Commit 288: Modified documentation - 309
 Commit 289: Removed bug - 582
 
 Commit 290: Implemented feature - 909
+
+Commit 291: Fixed style - 886
