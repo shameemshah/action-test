@@ -242,3 +242,5 @@ Commit 120: Removed bug - 326
 Commit 121: Refactored test - 271
 
 Commit 122: Refactored style - 806
+
+Commit 123: Refactored documentation - 807
