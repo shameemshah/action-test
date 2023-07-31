@@ -20,3 +20,5 @@ Commit 9: Modified style - 564
 Commit 10: Implemented feature - 889
 
 Commit 11: Refactored code - 656
+
+Commit 12: Refactored code - 863
