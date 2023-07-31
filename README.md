@@ -1,3 +1,3 @@
-# Random Cartoon Story 213
+# Random Cartoon Story 214
 
-Thor and Groot were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+Upon discovering an ancient artifact, Ultron and Doctor Doom unlocked unimaginable powers and became the last hope for secret garden.
