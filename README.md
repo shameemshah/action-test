@@ -1,3 +1,3 @@
-# Random Cartoon Story 192
+# Random Cartoon Story 193
 
-In a distant galaxy, Rocket and Doctor Strange joined a team of intergalactic heroes to defend the universe from an impending invasion.
+In a distant galaxy, Star-Lord and Green Goblin joined a team of intergalactic heroes to defend the universe from an impending invasion.
