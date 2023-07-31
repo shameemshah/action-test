@@ -152,3 +152,5 @@ Commit 75: Added style - 476
 Commit 76: Modified feature - 933
 
 Commit 77: Added code - 733
+
+Commit 78: Updated bug - 327
