@@ -260,3 +260,5 @@ Commit 129: Updated code - 842
 Commit 130: Added documentation - 906
 
 Commit 131: Fixed config - 993
+
+Commit 132: Implemented test - 850
