@@ -12,3 +12,5 @@ Commit 5: Modified test - 331
 Commit 6: Fixed feature - 988
 
 Commit 7: Updated bug - 461
+
+Commit 8: Removed bug - 229
