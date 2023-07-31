@@ -584,3 +584,5 @@ Commit 291: Fixed style - 886
 Commit 292: Updated bug - 587
 
 Commit 293: Added test - 872
+
+Commit 294: Added documentation - 129
