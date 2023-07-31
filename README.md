@@ -1,3 +1,3 @@
-# Random Cartoon Story 5
+# Random Cartoon Story 6
 
-Star-Lord and Iron Man found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
+Loki and Gamora were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Leonardo da Vinci.
