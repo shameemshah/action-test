@@ -1,3 +1,3 @@
-# Random Cartoon Story 117
+# Random Cartoon Story 118
 
-The fate of underwater kingdom rested in the hands of Doctor Doom and Venom as they faced their greatest challenge yet.
+Once upon a time, Red Skull and Star-Lord went on a grand adventure. They discovered underwater kingdom and found a enchanted book.
