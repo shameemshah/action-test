@@ -154,3 +154,5 @@ Commit 76: Modified feature - 933
 Commit 77: Added code - 733
 
 Commit 78: Updated bug - 327
+
+Commit 79: Removed bug - 766
