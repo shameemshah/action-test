@@ -556,3 +556,5 @@ Commit 277: Fixed feature - 675
 Commit 278: Updated test - 631
 
 Commit 279: Added bug - 204
+
+Commit 280: Modified documentation - 927
