@@ -1,3 +1,3 @@
-# Random Cartoon Story 71
+# Random Cartoon Story 72
 
-Winter Soldier and Iron Man were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+Red Skull and Ant-Man were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Albert Einstein.
