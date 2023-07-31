@@ -380,3 +380,5 @@ Commit 189: Fixed bug - 654
 Commit 190: Refactored style - 550
 
 Commit 191: Fixed documentation - 781
+
+Commit 192: Removed code - 224
