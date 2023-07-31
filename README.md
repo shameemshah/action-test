@@ -728,3 +728,5 @@ Commit 363: Fixed bug - 371
 Commit 364: Fixed code - 388
 
 Commit 365: Refactored documentation - 153
+
+Commit 366: Removed feature - 377
