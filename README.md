@@ -1,3 +1,3 @@
-# Random Cartoon Story 134
+# Random Cartoon Story 135
 
-As members of a legendary order, Venom and Ultron faced the dark forces threatening to plunge the world into eternal darkness.
+As members of a legendary order, Vision and Red Skull faced the dark forces threatening to plunge the world into eternal darkness.
