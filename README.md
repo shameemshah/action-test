@@ -300,3 +300,5 @@ Commit 149: Fixed bug - 647
 Commit 150: Refactored config - 544
 
 Commit 151: Modified documentation - 360
+
+Commit 152: Modified config - 984
