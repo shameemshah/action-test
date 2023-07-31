@@ -676,3 +676,5 @@ Commit 337: Implemented style - 739
 Commit 338: Implemented test - 235
 
 Commit 339: Fixed test - 486
+
+Commit 340: Added documentation - 808
