@@ -128,3 +128,5 @@ Commit 63: Removed bug - 646
 Commit 64: Updated style - 633
 
 Commit 65: Added feature - 638
+
+Commit 66: Modified documentation - 431
