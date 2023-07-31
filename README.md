@@ -40,3 +40,5 @@ Commit 19: Refactored code - 977
 Commit 20: Modified style - 504
 
 Commit 21: Updated documentation - 881
+
+Commit 22: Modified feature - 441
