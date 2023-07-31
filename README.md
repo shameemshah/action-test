@@ -1,3 +1,3 @@
-# Random Cartoon Story 42
+# Random Cartoon Story 43
 
-Doctor Strange and Hawkeye lived in a magical world filled with talking animals and friendly wizards. They had a pet friendly panda named Shadow.
+In a distant galaxy, Doctor Strange and Winter Soldier joined a team of intergalactic heroes to defend the universe from an impending invasion.
