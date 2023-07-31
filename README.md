@@ -188,3 +188,5 @@ Commit 93: Removed bug - 535
 Commit 94: Refactored documentation - 706
 
 Commit 95: Modified test - 168
+
+Commit 96: Updated code - 334
