@@ -1,3 +1,3 @@
-# Random Cartoon Story 126
+# Random Cartoon Story 127
 
-Green Goblin and Ant-Man were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+Deep inside a mysterious forest, Rocket and Falcon encountered a friendly tribe of elves. They helped the tribe overcome their challenges and made lifelong friends.
