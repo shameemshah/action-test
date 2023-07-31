@@ -620,3 +620,5 @@ Commit 309: Updated feature - 294
 Commit 310: Refactored test - 927
 
 Commit 311: Updated code - 757
+
+Commit 312: Added style - 395
