@@ -1,3 +1,3 @@
-# Random Cartoon Story 118
+# Random Cartoon Story 119
 
-Once upon a time, Red Skull and Star-Lord went on a grand adventure. They discovered underwater kingdom and found a enchanted book.
+In a land ruled by magical creatures, Red Skull and Doctor Strange sought to restore harmony between different species and bring peace to underwater kingdom.
