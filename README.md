@@ -1,3 +1,3 @@
-# Random Cartoon Story 251
+# Random Cartoon Story 252
 
-In a faraway land, Captain America was an aspiring artist who met Spider-Man, a mischievous prankster. Together, they brought laughter to everyone around them.
+The fate of cosmic galaxy rested in the hands of Spider-Man and Mantis as they faced their greatest challenge yet.
