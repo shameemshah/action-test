@@ -582,3 +582,5 @@ Commit 290: Implemented feature - 909
 Commit 291: Fixed style - 886
 
 Commit 292: Updated bug - 587
+
+Commit 293: Added test - 872
