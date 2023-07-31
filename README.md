@@ -562,3 +562,5 @@ Commit 280: Modified documentation - 927
 Commit 281: Updated bug - 741
 
 Commit 282: Implemented test - 988
+
+Commit 283: Removed style - 867
