@@ -270,3 +270,5 @@ Commit 134: Added style - 950
 Commit 135: Removed feature - 319
 
 Commit 136: Refactored code - 655
+
+Commit 137: Removed config - 905
