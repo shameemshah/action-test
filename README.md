@@ -112,3 +112,5 @@ Commit 55: Updated documentation - 331
 Commit 56: Fixed bug - 248
 
 Commit 57: Added documentation - 480
+
+Commit 58: Fixed documentation - 316
