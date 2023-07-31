@@ -376,3 +376,5 @@ Commit 187: Fixed bug - 572
 Commit 188: Modified code - 404
 
 Commit 189: Fixed bug - 654
+
+Commit 190: Refactored style - 550
