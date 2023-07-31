@@ -464,3 +464,5 @@ Commit 231: Updated documentation - 213
 Commit 232: Modified bug - 593
 
 Commit 233: Implemented code - 388
+
+Commit 234: Added config - 186
