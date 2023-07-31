@@ -360,3 +360,5 @@ Commit 179: Removed documentation - 235
 Commit 180: Removed documentation - 185
 
 Commit 181: Removed bug - 961
+
+Commit 182: Updated style - 110
