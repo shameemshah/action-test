@@ -1,3 +1,3 @@
-# Random Cartoon Story 25
+# Random Cartoon Story 26
 
-As members of a legendary order, Green Goblin and Hawkeye faced the dark forces threatening to plunge the world into eternal darkness.
+In a world where Hulk and Green Goblin possessed incredible superpowers, they joined forces to protect cosmic galaxy from various threats.
