@@ -604,3 +604,5 @@ Commit 301: Removed bug - 815
 Commit 302: Removed style - 421
 
 Commit 303: Implemented config - 957
+
+Commit 304: Fixed code - 261
