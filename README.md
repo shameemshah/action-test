@@ -1,3 +1,3 @@
-# Random Cartoon Story 11
+# Random Cartoon Story 12
 
-Green Goblin and Hulk lived in a magical world filled with talking animals and friendly wizards. They had a pet unicorn named Sunny.
+Once upon a time, Doctor Doom and Black Panther went on a grand adventure. They discovered enchanted forest and found a magical amulet.
