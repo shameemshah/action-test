@@ -612,3 +612,5 @@ Commit 305: Updated test - 475
 Commit 306: Removed test - 424
 
 Commit 307: Removed config - 518
+
+Commit 308: Refactored config - 572
