@@ -1,3 +1,3 @@
-# Random Cartoon Story 22
+# Random Cartoon Story 23
 
-Green Goblin and Doctor Doom were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Cleopatra.
+In a distant galaxy, Venom and Star-Lord joined a team of intergalactic heroes to defend the universe from an impending invasion.
