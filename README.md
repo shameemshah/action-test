@@ -108,3 +108,5 @@ Commit 53: Fixed bug - 496
 Commit 54: Modified test - 910
 
 Commit 55: Updated documentation - 331
+
+Commit 56: Fixed bug - 248
