@@ -1,3 +1,3 @@
-# Random Cartoon Story 135
+# Random Cartoon Story 136
 
-As members of a legendary order, Vision and Red Skull faced the dark forces threatening to plunge the world into eternal darkness.
+In a land ruled by magical creatures, Captain Marvel and Star-Lord sought to restore harmony between different species and bring peace to ancient ruins.
