@@ -172,3 +172,5 @@ Commit 85: Removed code - 965
 Commit 86: Implemented code - 379
 
 Commit 87: Refactored test - 608
+
+Commit 88: Updated style - 397
