@@ -858,3 +858,5 @@ Commit 428: Refactored config - 178
 Commit 429: Implemented config - 915
 
 Commit 430: Refactored bug - 519
+
+Commit 431: Refactored documentation - 439
