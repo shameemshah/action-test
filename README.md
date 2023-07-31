@@ -542,3 +542,5 @@ Commit 270: Implemented bug - 952
 Commit 271: Refactored test - 494
 
 Commit 272: Updated code - 303
+
+Commit 273: Removed style - 348
