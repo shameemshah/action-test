@@ -1,3 +1,3 @@
-# Random Cartoon Story 199
+# Random Cartoon Story 200
 
-As members of a legendary order, Scarlet Witch and Star-Lord faced the dark forces threatening to plunge the world into eternal darkness.
+Groot and Ant-Man were students at a prestigious academy for aspiring heroes, where they honed their abilities and forged unbreakable friendships.
