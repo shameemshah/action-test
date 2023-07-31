@@ -60,3 +60,5 @@ Commit 29: Added test - 930
 Commit 30: Updated documentation - 159
 
 Commit 31: Removed config - 617
+
+Commit 32: Modified test - 517
