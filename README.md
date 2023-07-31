@@ -212,3 +212,5 @@ Commit 105: Refactored code - 406
 Commit 106: Fixed test - 720
 
 Commit 107: Modified config - 633
+
+Commit 108: Added bug - 880
