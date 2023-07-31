@@ -184,3 +184,5 @@ Commit 91: Added config - 996
 Commit 92: Refactored style - 343
 
 Commit 93: Removed bug - 535
+
+Commit 94: Refactored documentation - 706
