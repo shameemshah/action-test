@@ -168,3 +168,5 @@ Commit 83: Modified documentation - 608
 Commit 84: Modified documentation - 303
 
 Commit 85: Removed code - 965
+
+Commit 86: Implemented code - 379
