@@ -432,3 +432,5 @@ Commit 215: Updated config - 237
 Commit 216: Updated feature - 218
 
 Commit 217: Added documentation - 377
+
+Commit 218: Implemented documentation - 959
