@@ -68,3 +68,5 @@ Commit 33: Modified config - 771
 Commit 34: Removed test - 439
 
 Commit 35: Modified documentation - 297
+
+Commit 36: Added style - 338
