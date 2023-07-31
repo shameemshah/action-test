@@ -1,3 +1,3 @@
-# Random Cartoon Story 78
+# Random Cartoon Story 79
 
-Hawkeye and Mantis were students at a prestigious academy for aspiring heroes, where they honed their abilities and forged unbreakable friendships.
+Upon discovering an ancient artifact, Black Panther and Gamora unlocked unimaginable powers and became the last hope for fairy tale castle.
