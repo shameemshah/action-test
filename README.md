@@ -608,3 +608,5 @@ Commit 303: Implemented config - 957
 Commit 304: Fixed code - 261
 
 Commit 305: Updated test - 475
+
+Commit 306: Removed test - 424
