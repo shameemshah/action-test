@@ -1,3 +1,3 @@
-# Random Cartoon Story 209
+# Random Cartoon Story 210
 
-In a steampunk-inspired world, Rocket and Ultron built incredible inventions and sought to uncover the secrets of a hidden society.
+Deep inside a mysterious forest, Mantis and Winter Soldier encountered a friendly tribe of centaurs. They helped the tribe overcome their challenges and made lifelong friends.
