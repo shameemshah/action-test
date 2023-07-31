@@ -1,3 +1,3 @@
-# Random Cartoon Story 125
+# Random Cartoon Story 126
 
-In a land ruled by magical creatures, Doctor Doom and Doctor Doom sought to restore harmony between different species and bring peace to cosmic galaxy.
+Green Goblin and Ant-Man were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
