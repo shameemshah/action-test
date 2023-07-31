@@ -768,3 +768,5 @@ Commit 383: Removed feature - 902
 Commit 384: Updated config - 690
 
 Commit 385: Removed style - 943
+
+Commit 386: Refactored documentation - 307
