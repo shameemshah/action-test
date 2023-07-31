@@ -220,3 +220,5 @@ Commit 109: Updated style - 625
 Commit 110: Updated bug - 480
 
 Commit 111: Added style - 727
+
+Commit 112: Added config - 486
