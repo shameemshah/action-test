@@ -174,3 +174,5 @@ Commit 86: Implemented code - 379
 Commit 87: Refactored test - 608
 
 Commit 88: Updated style - 397
+
+Commit 89: Fixed documentation - 122
