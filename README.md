@@ -84,3 +84,5 @@ Commit 41: Removed test - 850
 Commit 42: Updated config - 865
 
 Commit 43: Modified code - 926
+
+Commit 44: Added style - 665
