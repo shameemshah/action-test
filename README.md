@@ -1,3 +1,3 @@
-# Random Cartoon Story 20
+# Random Cartoon Story 21
 
-On a beautiful sunny day, Hulk and Captain America embarked on a mission to save underwater kingdom from an evil [Villain]. They used their special powers to defeat the villain and restore peace.
+On a beautiful sunny day, Captain Marvel and Captain Marvel embarked on a mission to save secret garden from an evil [Villain]. They used their special powers to defeat the villain and restore peace.
