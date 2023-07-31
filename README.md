@@ -1,3 +1,3 @@
-# Random Cartoon Story 90
+# Random Cartoon Story 91
 
-As time travelers, Hulk and Groot traveled to different eras, encountering historical figures and witnessing pivotal events.
+Scarlet Witch and Captain Marvel were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Cleopatra.
