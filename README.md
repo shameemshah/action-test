@@ -180,3 +180,5 @@ Commit 89: Fixed documentation - 122
 Commit 90: Refactored documentation - 566
 
 Commit 91: Added config - 996
+
+Commit 92: Refactored style - 343
