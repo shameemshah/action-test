@@ -594,3 +594,5 @@ Commit 296: Removed code - 997
 Commit 297: Added config - 215
 
 Commit 298: Fixed code - 372
+
+Commit 299: Fixed feature - 291
