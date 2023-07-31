@@ -738,3 +738,5 @@ Commit 368: Removed code - 577
 Commit 369: Fixed code - 792
 
 Commit 370: Updated documentation - 600
+
+Commit 371: Added feature - 740
