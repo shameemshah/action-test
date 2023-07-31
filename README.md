@@ -508,3 +508,5 @@ Commit 253: Fixed config - 515
 Commit 254: Implemented documentation - 641
 
 Commit 255: Updated documentation - 116
+
+Commit 256: Added config - 746
