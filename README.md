@@ -18,3 +18,5 @@ Commit 8: Removed bug - 229
 Commit 9: Modified style - 564
 
 Commit 10: Implemented feature - 889
+
+Commit 11: Refactored code - 656
