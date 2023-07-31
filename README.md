@@ -516,3 +516,5 @@ Commit 257: Fixed feature - 854
 Commit 258: Updated documentation - 512
 
 Commit 259: Updated config - 174
+
+Commit 260: Modified config - 387
