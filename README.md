@@ -1,3 +1,3 @@
-# Random Cartoon Story 189
+# Random Cartoon Story 190
 
-Drax and Captain America were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+Venom and Black Panther found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
