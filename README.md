@@ -1,3 +1,3 @@
-# Random Cartoon Story 108
+# Random Cartoon Story 109
 
-Red Skull and Ultron lived in a magical world filled with talking animals and friendly wizards. They had a pet friendly panda named Whiskers.
+Upon discovering an ancient artifact, Falcon and Thanos unlocked unimaginable powers and became the last hope for cosmic galaxy.
