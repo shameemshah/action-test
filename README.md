@@ -528,3 +528,5 @@ Commit 263: Refactored bug - 399
 Commit 264: Updated documentation - 707
 
 Commit 265: Fixed documentation - 568
+
+Commit 266: Implemented style - 295
