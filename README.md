@@ -388,3 +388,5 @@ Commit 193: Updated test - 194
 Commit 194: Added documentation - 344
 
 Commit 195: Removed bug - 325
+
+Commit 196: Updated style - 828
