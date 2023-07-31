@@ -792,3 +792,5 @@ Commit 395: Updated style - 474
 Commit 396: Removed bug - 658
 
 Commit 397: Fixed feature - 144
+
+Commit 398: Implemented bug - 831
