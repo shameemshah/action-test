@@ -324,3 +324,5 @@ Commit 161: Modified test - 235
 Commit 162: Modified code - 945
 
 Commit 163: Removed bug - 305
+
+Commit 164: Updated documentation - 747
