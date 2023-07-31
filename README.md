@@ -1,3 +1,3 @@
-# Random Cartoon Story 184
+# Random Cartoon Story 185
 
-In a steampunk-inspired world, Red Skull and Gamora built incredible inventions and sought to uncover the secrets of a hidden society.
+The fate of underwater kingdom rested in the hands of Gamora and Drax as they faced their greatest challenge yet.
