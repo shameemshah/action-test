@@ -900,3 +900,5 @@ Commit 449: Refactored code - 798
 Commit 450: Refactored test - 518
 
 Commit 451: Implemented documentation - 255
+
+Commit 452: Removed documentation - 776
