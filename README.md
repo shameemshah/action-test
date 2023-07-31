@@ -96,3 +96,5 @@ Commit 47: Implemented feature - 780
 Commit 48: Updated test - 543
 
 Commit 49: Modified test - 313
+
+Commit 50: Implemented bug - 940
