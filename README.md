@@ -88,3 +88,5 @@ Commit 43: Modified code - 926
 Commit 44: Added style - 665
 
 Commit 45: Added documentation - 779
+
+Commit 46: Implemented bug - 792
