@@ -246,3 +246,5 @@ Commit 122: Refactored style - 806
 Commit 123: Refactored documentation - 807
 
 Commit 124: Fixed style - 312
+
+Commit 125: Refactored test - 647
