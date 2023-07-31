@@ -696,3 +696,5 @@ Commit 347: Refactored style - 787
 Commit 348: Implemented feature - 475
 
 Commit 349: Updated test - 503
+
+Commit 350: Added config - 621
