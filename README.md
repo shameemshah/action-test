@@ -86,3 +86,5 @@ Commit 42: Updated config - 865
 Commit 43: Modified code - 926
 
 Commit 44: Added style - 665
+
+Commit 45: Added documentation - 779
