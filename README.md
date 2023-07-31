@@ -26,3 +26,5 @@ Commit 12: Refactored code - 863
 Commit 13: Modified bug - 688
 
 Commit 14: Implemented documentation - 434
+
+Commit 15: Added bug - 379
