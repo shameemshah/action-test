@@ -1,3 +1,3 @@
-# Random Cartoon Story 203
+# Random Cartoon Story 204
 
-Thanos and Doctor Strange lived in a magical world filled with talking animals and friendly wizards. They had a pet friendly panda named Bubbles.
+Star-Lord and Black Widow found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
