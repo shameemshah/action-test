@@ -140,3 +140,5 @@ Commit 69: Removed code - 524
 Commit 70: Fixed code - 421
 
 Commit 71: Added config - 164
+
+Commit 72: Removed documentation - 962
