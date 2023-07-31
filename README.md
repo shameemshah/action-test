@@ -880,3 +880,5 @@ Commit 439: Removed test - 233
 Commit 440: Updated bug - 566
 
 Commit 441: Implemented config - 238
+
+Commit 442: Modified documentation - 863
