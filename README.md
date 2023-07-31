@@ -996,3 +996,5 @@ Commit 497: Modified feature - 993
 Commit 498: Implemented test - 633
 
 Commit 499: Updated feature - 401
+
+Commit 500: Updated documentation - 595
