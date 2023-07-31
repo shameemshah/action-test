@@ -630,3 +630,5 @@ Commit 314: Modified style - 388
 Commit 315: Fixed bug - 741
 
 Commit 316: Updated test - 891
+
+Commit 317: Removed feature - 802
