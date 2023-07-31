@@ -720,3 +720,5 @@ Commit 359: Refactored bug - 305
 Commit 360: Updated feature - 501
 
 Commit 361: Refactored feature - 507
+
+Commit 362: Updated test - 531
