@@ -1,3 +1,3 @@
-# Random Cartoon Story 200
+# Random Cartoon Story 201
 
-Groot and Ant-Man were students at a prestigious academy for aspiring heroes, where they honed their abilities and forged unbreakable friendships.
+Thor and Thor found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
