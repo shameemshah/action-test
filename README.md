@@ -610,3 +610,5 @@ Commit 304: Fixed code - 261
 Commit 305: Updated test - 475
 
 Commit 306: Removed test - 424
+
+Commit 307: Removed config - 518
