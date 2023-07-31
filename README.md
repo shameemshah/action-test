@@ -1,3 +1,3 @@
-# Random Cartoon Story 164
+# Random Cartoon Story 165
 
-Vision and Winter Soldier were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+As time travelers, Rocket and Venom traveled to different eras, encountering historical figures and witnessing pivotal events.
