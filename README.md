@@ -1,3 +1,3 @@
-# Random Cartoon Story 124
+# Random Cartoon Story 125
 
-On a beautiful sunny day, Groot and Rocket embarked on a mission to save underwater kingdom from an evil [Villain]. They used their special powers to defeat the villain and restore peace.
+In a land ruled by magical creatures, Doctor Doom and Doctor Doom sought to restore harmony between different species and bring peace to cosmic galaxy.
