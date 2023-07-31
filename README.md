@@ -672,3 +672,5 @@ Commit 335: Removed bug - 781
 Commit 336: Updated config - 138
 
 Commit 337: Implemented style - 739
+
+Commit 338: Implemented test - 235
