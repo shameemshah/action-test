@@ -600,3 +600,5 @@ Commit 299: Fixed feature - 291
 Commit 300: Fixed feature - 366
 
 Commit 301: Removed bug - 815
+
+Commit 302: Removed style - 421
