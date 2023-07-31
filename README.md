@@ -228,3 +228,5 @@ Commit 113: Fixed feature - 563
 Commit 114: Modified documentation - 473
 
 Commit 115: Implemented bug - 758
+
+Commit 116: Implemented style - 371
