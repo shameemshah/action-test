@@ -742,3 +742,5 @@ Commit 370: Updated documentation - 600
 Commit 371: Added feature - 740
 
 Commit 372: Removed config - 158
+
+Commit 373: Modified documentation - 653
