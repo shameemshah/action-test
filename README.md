@@ -50,3 +50,5 @@ Commit 24: Fixed code - 509
 Commit 25: Refactored config - 737
 
 Commit 26: Updated config - 632
+
+Commit 27: Added test - 804
