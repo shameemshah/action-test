@@ -1,3 +1,3 @@
-# Random Cartoon Story 18
+# Random Cartoon Story 19
 
-Once upon a time, Captain America and Doctor Doom went on a grand adventure. They discovered secret garden and found a enchanted book.
+In a world where Vision and Mantis possessed incredible superpowers, they joined forces to protect fairy tale castle from various threats.
