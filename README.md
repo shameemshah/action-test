@@ -1,3 +1,3 @@
-# Random Cartoon Story 180
+# Random Cartoon Story 181
 
-Amidst a series of comical events, Black Panther and Doctor Strange found themselves in hilarious situations. They learned valuable lessons about friendship.
+Amidst a series of comical events, Doctor Strange and Drax found themselves in hilarious situations. They learned valuable lessons about kindness.
