@@ -530,3 +530,5 @@ Commit 264: Updated documentation - 707
 Commit 265: Fixed documentation - 568
 
 Commit 266: Implemented style - 295
+
+Commit 267: Fixed code - 255
