@@ -498,3 +498,5 @@ Commit 248: Removed test - 172
 Commit 249: Removed bug - 613
 
 Commit 250: Fixed feature - 176
+
+Commit 251: Implemented test - 601
