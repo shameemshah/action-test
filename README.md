@@ -384,3 +384,5 @@ Commit 191: Fixed documentation - 781
 Commit 192: Removed code - 224
 
 Commit 193: Updated test - 194
+
+Commit 194: Added documentation - 344
