@@ -374,3 +374,5 @@ Commit 186: Removed style - 638
 Commit 187: Fixed bug - 572
 
 Commit 188: Modified code - 404
+
+Commit 189: Fixed bug - 654
