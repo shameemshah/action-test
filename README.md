@@ -308,3 +308,5 @@ Commit 153: Updated bug - 538
 Commit 154: Refactored config - 309
 
 Commit 155: Fixed documentation - 626
+
+Commit 156: Added documentation - 688
