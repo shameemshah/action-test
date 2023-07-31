@@ -1,3 +1,3 @@
-# Random Cartoon Story 103
+# Random Cartoon Story 104
 
-Red Skull and Thanos were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
+In a world where Gamora and Falcon possessed incredible superpowers, they joined forces to protect cosmic galaxy from various threats.
