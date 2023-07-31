@@ -22,3 +22,5 @@ Commit 10: Implemented feature - 889
 Commit 11: Refactored code - 656
 
 Commit 12: Refactored code - 863
+
+Commit 13: Modified bug - 688
