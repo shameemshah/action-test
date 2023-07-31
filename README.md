@@ -296,3 +296,5 @@ Commit 147: Removed code - 817
 Commit 148: Refactored test - 481
 
 Commit 149: Fixed bug - 647
+
+Commit 150: Refactored config - 544
