@@ -208,3 +208,5 @@ Commit 103: Implemented config - 270
 Commit 104: Removed feature - 955
 
 Commit 105: Refactored code - 406
+
+Commit 106: Fixed test - 720
