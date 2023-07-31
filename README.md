@@ -704,3 +704,5 @@ Commit 351: Refactored feature - 492
 Commit 352: Removed test - 856
 
 Commit 353: Modified code - 678
+
+Commit 354: Modified config - 401
