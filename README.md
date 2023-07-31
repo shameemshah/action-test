@@ -34,3 +34,5 @@ Commit 16: Implemented test - 961
 Commit 17: Updated style - 207
 
 Commit 18: Refactored code - 340
+
+Commit 19: Refactored code - 977
