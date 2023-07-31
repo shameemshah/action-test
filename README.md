@@ -978,3 +978,5 @@ Commit 488: Implemented config - 638
 Commit 489: Removed config - 264
 
 Commit 490: Updated style - 187
+
+Commit 491: Fixed bug - 476
