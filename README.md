@@ -74,3 +74,5 @@ Commit 36: Added style - 338
 Commit 37: Updated style - 590
 
 Commit 38: Fixed code - 359
+
+Commit 39: Refactored test - 430
