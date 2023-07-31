@@ -430,3 +430,5 @@ Commit 214: Fixed code - 335
 Commit 215: Updated config - 237
 
 Commit 216: Updated feature - 218
+
+Commit 217: Added documentation - 377
