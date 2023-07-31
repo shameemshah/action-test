@@ -970,3 +970,5 @@ Commit 484: Added test - 953
 Commit 485: Refactored code - 668
 
 Commit 486: Modified config - 241
+
+Commit 487: Refactored config - 249
