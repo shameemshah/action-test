@@ -904,3 +904,5 @@ Commit 451: Implemented documentation - 255
 Commit 452: Removed documentation - 776
 
 Commit 453: Fixed test - 710
+
+Commit 454: Implemented config - 837
