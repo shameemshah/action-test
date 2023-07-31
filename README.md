@@ -588,3 +588,5 @@ Commit 293: Added test - 872
 Commit 294: Added documentation - 129
 
 Commit 295: Updated config - 991
+
+Commit 296: Removed code - 997
