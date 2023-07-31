@@ -796,3 +796,5 @@ Commit 397: Fixed feature - 144
 Commit 398: Implemented bug - 831
 
 Commit 399: Added bug - 647
+
+Commit 400: Refactored test - 334
