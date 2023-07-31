@@ -1,3 +1,3 @@
-# Random Cartoon Story 97
+# Random Cartoon Story 98
 
-During a time-traveling adventure, Loki and Drax encountered their past and future selves, leading to unexpected consequences.
+Thanos and Mantis were explorers who traveled through time with their trusty time machine. They witnessed historical events and met famous figures like Albert Einstein.
