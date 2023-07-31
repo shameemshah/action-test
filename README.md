@@ -1,3 +1,3 @@
-# Random Cartoon Story 83
+# Random Cartoon Story 84
 
-Mantis and Hawkeye found a magical portal that transported them to a dimension filled with strange creatures and astonishing landscapes.
+Amidst a series of comical events, Rocket and Mantis found themselves in hilarious situations. They learned valuable lessons about teamwork.
