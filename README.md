@@ -1,3 +1,3 @@
-# Random Cartoon Story 265
+# Random Cartoon Story 266
 
-In a distant galaxy, Hulk and Hawkeye joined a team of intergalactic heroes to defend the universe from an impending invasion.
+Upon discovering an ancient artifact, Winter Soldier and Ant-Man unlocked unimaginable powers and became the last hope for secret garden.
