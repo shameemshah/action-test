@@ -1,3 +1,3 @@
-# Random Cartoon Story 249
+# Random Cartoon Story 250
 
-In a land ruled by magical creatures, Groot and Wasp sought to restore harmony between different species and bring peace to underwater kingdom.
+Venom and Star-Lord were secret agents on a mission to stop [Villain] from unleashing a devastating weapon upon the world.
