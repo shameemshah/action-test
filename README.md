@@ -772,3 +772,5 @@ Commit 385: Removed style - 943
 Commit 386: Refactored documentation - 307
 
 Commit 387: Fixed style - 429
+
+Commit 388: Fixed bug - 822
