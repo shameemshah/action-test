@@ -392,3 +392,5 @@ Commit 195: Removed bug - 325
 Commit 196: Updated style - 828
 
 Commit 197: Implemented config - 662
+
+Commit 198: Modified documentation - 779
