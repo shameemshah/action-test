@@ -402,3 +402,5 @@ Commit 200: Updated style - 835
 Commit 201: Modified documentation - 851
 
 Commit 202: Updated documentation - 997
+
+Commit 203: Removed config - 929
