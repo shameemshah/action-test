@@ -100,3 +100,5 @@ Commit 49: Modified test - 313
 Commit 50: Implemented bug - 940
 
 Commit 51: Modified code - 710
+
+Commit 52: Added documentation - 399
