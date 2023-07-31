@@ -514,3 +514,5 @@ Commit 256: Added config - 746
 Commit 257: Fixed feature - 854
 
 Commit 258: Updated documentation - 512
+
+Commit 259: Updated config - 174
